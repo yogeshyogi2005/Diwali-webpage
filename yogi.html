@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celebrate Diwali</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(270deg, #ff6600, #ffcc00, #ff3300, #ff6600);
+      background-size: 600% 600%;
+      animation: bgShift 15s ease infinite;
+      overflow: hidden;
+    }
+
+    /* Moving gradient animation */
+    @keyframes bgShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+      transform-style: preserve-3d;
+      animation: rotate3d 10s infinite linear;
+    }
+
+    /* 3D card rotation */
+    @keyframes rotate3d {
+      0% { transform: rotateY(0deg) rotateX(0deg); }
+      25% { transform: rotateY(10deg) rotateX(5deg); }
+      50% { transform: rotateY(-10deg) rotateX(-5deg); }
+      75% { transform: rotateY(5deg) rotateX(8deg); }
+      100% { transform: rotateY(0deg) rotateX(0deg); }
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      animation: pulse 4s infinite ease-in-out;
+      box-shadow: 0 0 20px rgba(255, 100, 0, 0.8);
+    }
+
+    /* Image breathing animation */
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+    }
+
+    .card h2 {
+      font-size: 24px;
+      margin: 10px 0;
+      color: #d62828;
+      text-shadow: 0 0 10px #fff, 0 0 20px #ffcc00;
+      animation: glowText 2s infinite alternate;
+    }
+
+    @keyframes glowText {
+      from { text-shadow: 0 0 10px #ff6600, 0 0 20px #ffcc00; }
+      to { text-shadow: 0 0 20px #ff3300, 0 0 40px #ffff66; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Main Image -->
+    <img src="diwali-2023-date-quotes-wishes-images-messages-greetings-to-share-on-diwali-20231102175004-1490.jpg" alt="Diwali Celebration">
+
+    <!-- Second Image (centered, below main image) -->
+    <img src="diwali-family.jpg" alt="Diwali Family Celebration">
+
+    <h2>🌟 CELEBRATE DIWALI IN INDIA 🌟</h2>
+  </div>
+</body>
+</html>
+
+
+
+
